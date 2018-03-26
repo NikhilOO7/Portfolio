@@ -1,0 +1,87 @@
+/* GIT CORNER IMAGE */
+.github-corner:hover .octo-arm{
+    animation:octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave{
+    0%,100%{transform:rotate(0)}
+    20%,60%{transform:rotate(-25deg)}
+    40%,80%{transform:rotate(10deg)}
+}
+@media (max-width:500px){
+    .github-corner:hover .octo-arm{
+        animation:none
+    }
+    .github-corner .octo-arm{
+        animation:octocat-wave 560ms ease-in-out
+    }
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 75px;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+#typewriter {
+    font-size: 30px;
+    font-weight: initial;
+}
+
+/* Sidebar */
+.sideNav {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #11111114;
+    overflow-x: hidden;
+    padding-top: 0px;
+}
+
+.page {
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+}
+
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Hover event on links in sidebar */
+.text {
+    display: none;
+    text-decoration: none;
+    color: #212529a6;
+    font-size: 15px;
+}
+
+.wrapper:hover .hover {
+    display: none;
+}
+
+.wrapper:hover .text {
+    display: block;
+}
+
+
+
+/* Main Content */
+.main {
+    margin-left: 70px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
