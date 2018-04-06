@@ -37,7 +37,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #11111114;
+    background-color: #11111105;
     overflow-x: hidden;
     padding-top: 0px;
 }
@@ -84,4 +84,37 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+/* Skill canvas chart */
+@media (max-width: 960px) {
+    .skills-charts {
+        position: relative;
+        left: 0%;
+        width: 80%;
+        top: 0%;
+        clear: both;
+        overflow: hidden;
+        margin: auto;
+        transform: translateY(0%);
+    }
+}
+
+#myCanvas {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+#myCanvasContainer {
+    position: relative;
+    margin: 0, 10% !important;
+    display: block;
+    clear: both;
+    width: 80%;
+    height: auto;
 }
