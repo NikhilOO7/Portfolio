@@ -13,6 +13,10 @@
 	<script type="text/javascript" src="./js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/cloudTag.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+	
 </head>
 <body>
 	<!-- Sidebar -->
@@ -61,29 +65,35 @@
 	    	<span class="folded-corner"></span>
 	    </a>
 	</div>
-	<div class="skill-charts">
-		<div id="myCanvasContainer">
-			<canvas height="500px" width="500px" id="myCanvas">
-				<ul>
-					<li>
-						<a href="#"> Python </a>
-					</li>
-					<li>
-						<a href="#"> Java </a>
-					</li>
-					<li>
-						<a href="#"> Pandas </a>
-					</li>
-					<li>
-						<a href="#"> Scipy </a>
-					</li>
-					<li>
-						<a href="#"> SQL </a>
-					</li>
+	<div class="skillCharts">
+		<a href="#"> Python </a>
 
-				</ul>
-			</canvas>
-		</div>
+		<a href="#"> Java </a>
+
+		<a href="#"> Pandas </a>
+
+		<a href="#"> Scipy </a>
+
+		<a href="#"> SQLite </a>
+
+		<a href="#"> Postgre </a>
+
+		<a href="#"> Angular 2 </a>
+
+		<a href="#"> MongoDB </a>
+
+		<a href="#"> NodeJS </a>
+
+		<a href="#"> Express JS </a>
+
+		<a href="#"> Django </a>
 	</div>
 </body>
+<script>
+	$(document).ready(function() {
+	    $('skillCharts').cloudTag({
+	        ballSize : 100
+	    });
+	});
+</script>
 </html>	

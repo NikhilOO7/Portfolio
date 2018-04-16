@@ -87,8 +87,8 @@
 }
 
 /* Skill canvas chart */
-@media (max-width: 960px) {
-    .skills-charts {
+/*@media (max-width: 960px) {
+    .skillsCharts {
         position: relative;
         left: 0%;
         width: 80%;
@@ -117,4 +117,12 @@
     clear: both;
     width: 80%;
     height: auto;
+}
+*/
+
+/* Map */
+#map {
+    height: 800px;
+    width: 50%;
+    float: right;
 }

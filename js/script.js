@@ -56,3 +56,17 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+// Map loading function
+// var map;
+function initMap() {
+    var location = {lat: 28.552417, lng: 77.249307};
+    var map = new google.maps.Map( document.getElementById('map'), {
+        zoom: 18,
+        center: location
+    });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+}
